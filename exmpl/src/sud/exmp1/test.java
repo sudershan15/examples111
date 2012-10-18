@@ -1,7 +1,5 @@
 package sud.exmp1;
 
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeMap;
@@ -9,7 +7,7 @@ import java.util.TreeMap;
 class test {
 	public static void main(String args[]) {
 		System.out.println("Hello World");
-		String str1 = "Hello this is my, name Sudershan.";
+		String str1 = "Hello this is my, name  Sudershan.";
 		int counter = 0;
 		TreeMap<Integer, Integer> locs = new TreeMap<Integer, Integer>();
 		//String[] str1 = str.split(" "); 
