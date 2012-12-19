@@ -4,7 +4,7 @@ public class Product {
 
 
 	public static void main(String[] args) {
-		int num[]={1,2,8,3,4,5};
+		int num[]={1,2,8,3,0,4,5};
 		int result[];
 		result=prod(num);
 	}

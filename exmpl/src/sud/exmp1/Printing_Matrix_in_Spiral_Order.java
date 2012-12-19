@@ -20,6 +20,8 @@ public class Printing_Matrix_in_Spiral_Order {
 		int TopLeftCol=0;
 		int BottomRightRow=test.length-1;
 		int BottomRightCol=test[0].length-1;
+		int num=1;
+		while(num!=7)
 		while(TopLeftRow <= BottomRightRow && TopLeftCol <= BottomRightCol){
 			int beginX=TopLeftRow;
 			int beginY=TopLeftCol;

@@ -4,15 +4,72 @@ import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeMap;
 
+import javax.sound.sampled.ReverbType;
+
 class test {
+	
+	static void reverseStringWords1(char[] str)
+	{
+		int i,j, t;
+		char temp;
+		i=j=0;
+		while(j!=str.length)
+		{
+			while(str[j]!=' '){
+				j++;
+			}
+			
+			for(int k = i; k < j; k++, j--)
+			{
+				temp = str[k];
+				str[k] = str [j];
+				str[j] = temp;
+				
+			}
+			System.out.println(str);
+			while(i!=' ')i++;
+			while(j!=' ')j++;
+		}
+		System.out.println(str);
+	}
 	public static void main(String args[]) {
-		System.out.println("Hello World");
-		String str1 = "Hello this is my, name  Sudershan.";
-		int counter = 0;
-		TreeMap<Integer, Integer> locs = new TreeMap<Integer, Integer>();
-		//String[] str1 = str.split(" "); 
+		
+		double payment = 0.1;
+		double sum = 0.0;
+
+		for (int i=0; i<10; i++)
+		{
+		sum += payment;
+		System.out.println(sum);
+		}
+		
+		
+		double payment1 = 0.125;
+		double sum1 = 0.0;
+
+		for (int i=0; i<8; i++) {
+		sum1 += payment1;
+		System.out.println(sum1);
+		}
+		
+		}
+		
+//		String str1 = "grass is green";
+//		
+//		// Approach 1
+//		char[] str= str1.toCharArray();
+//		reverseStringWords1(str);
+
+		// Approach 2
+		/*String[] str1 = str.split(" "); 
 		for(int i=0; i < str1.length(); i++) {
-			//System.out.println(str1[i]);
+			System.out.println(str1[i]);
+		}*/
+		
+		//Approach 3
+		/*TreeMap<Integer, Integer> locs = new TreeMap<Integer, Integer>();
+		for(int i=0; i < str1.length(); i++) {
+			
 			
 			if(str1.charAt(i) == ' ') {
 				
@@ -35,6 +92,6 @@ class test {
 				System.out.print(str1.charAt(i));
 			}
 			System.out.print(" ");
-		}
+		}*/
 	}
-}
+//}
