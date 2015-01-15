@@ -46,5 +46,15 @@ public class NumberSpiralShape {
 					System.out.print(tab[i][j] + " ");
 			System.out.println();
 		}
+		
+		System.out.println();
+		for(i=0; i<=6; i++){
+			for(int j=0; j<=6; j++)
+				if(tab[i][j] == 0) 
+					System.out.print("  ");
+				else
+					System.out.print(tab[i][j] + " ");
+			System.out.println();
+		}
 	}
 }

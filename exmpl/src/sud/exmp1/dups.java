@@ -15,29 +15,41 @@ public class dups {
 	//@SuppressWarnings("null")
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int a=5, b= 9, c =a-b;
-		System.out.println((c>>31) + "     " + 0x1 );
-		int k=(c>>31)&0x1;
-		System.out.println((c>>31) + "     " + 0x1 + "       "+ k);
-		System.out.println(c);
-		int max = a-k*c;
+		int a1=5, b1= 9, c1 =a1-b1;
+		//you shifts -15 to right for 31 times using >> operator so your right most 31 bits are loosed and results is all bits 1 that is actually -1 in magnitude.
+		//0x1 for 1st bit, 0x2 for 2nd, 0x4 for 3rd, 0x8 for 4th, 0x10 for 5th etc.
+		int k=(c1>>31)&0x1;
+		System.out.println((c1>>31) + "     " + 0x1 + "       "+ k);
+		int max = a1-k*c1;
 		
 		System.out.println(max);
-		/*int list[] = {1,2,5,2,3,4,1,3}, res[] = {0,0,0,0,0,0,0};
-		int k=0, i;
-		for (i=0; i < list.length; i++) {
-			k = k ^ list[i];
-			if(res[k] == 0) {
-				res[k] = list[i];
-			} else {
-				res[k] = 0;
-			}
-			k=0;
-		}
-		for(i = 0; i < res.length; i++) {
-			System.out.println("=----->" + res[i]);
-		}
-		System.out.println("is first dup: " + list[k]);*/
+		
+		int a = 60;	/* 60 = 0011 1100 */  
+	     int b = 13;	/* 13 = 0000 1101 */
+	     int c = 0;
+
+	     c = a & b;       /* 12 = 0000 1100 */ 
+	     System.out.println("a & b = " + c );
+
+	     c = a | b;       /* 61 = 0011 1101 */
+	     System.out.println("a | b = " + c );
+
+	     c = a ^ b;       /* 49 = 0011 0001 */
+	     System.out.println("a ^ b = " + c );
+
+	     c = ~a;          /*-61 = 1100 0011 */
+	     System.out.println("~a = " + c );
+
+	     c = a << 2;     /* 240 = 1111 0000 */
+	     System.out.println("a << 2 = " + c );
+
+	     c = a >> 2;     /* 215 = 1111 */
+	     System.out.println("a >> 2  = " + c );
+
+	     c = a >>> 2;     /* 215 = 0000 1111 */
+	     System.out.println("a >>> 2 = " + c );
+	     
+	     
 		Hashtable charhash = new Hashtable();
 		int i, len;
 		String str = "My name is Merry Jones Merry Christmas";

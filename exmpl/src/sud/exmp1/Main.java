@@ -1,5 +1,5 @@
 package sud.exmp1;
-
+/*
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
@@ -76,4 +76,4 @@ Class Node {
    Public Node(char c) {
       this.data=c;
    }
-}
+}*/

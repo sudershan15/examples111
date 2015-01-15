@@ -1,5 +1,6 @@
 package sud.exmp1;
 
+//a is a magic number iff a*a = c (6 digit number) = (first 3 digits of c) + (last 3 digits of c)
 public class magic {
 	public static void main(String args[]){
 		int final_number;

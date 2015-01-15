@@ -16,7 +16,7 @@ public class Product {
 		for(int j = 0; j < num.length; j++) {
 			p=1;
 			for(int i = 0; i < num.length; i++) {
-				if(num[i] == num[j] && i == j) {
+				if(i == j) {
 					p*=1;
 				} else {
 					p*=num[i];

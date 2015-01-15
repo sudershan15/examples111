@@ -21,7 +21,7 @@ public class print {
 		// TODO Auto-generated method stub
 		int[] a={2,4,5,6,8,9,1,5};
 		printPairs(a,10);
-		int A[] = new int[] { 2, 1, 3, 5, 7, 6 };
+		int A[] = new int[] { 2, 1, 3, 5, 7, 6, 4 };
 		int B[] = new int[A.length];
 
 

@@ -1,5 +1,8 @@
 package sud.exmp1;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Anagram {
 
 	public Anagram() {
@@ -25,7 +28,7 @@ public class Anagram {
 			if (letters[c] == 0) {
 				++num_completed_t;
 				if (num_completed_t == num_unique_chars) {
-					// it’s a match if t has been processed completely
+					// itï¿½s a match if t has been processed completely
 					return i == t.length() - 1;
 				}
 			}
@@ -34,6 +37,7 @@ public class Anagram {
 	}
 	
 	public static void main(String[] args){
+		Map<Character, Integer> l=new HashMap(); 
 		String s = "Sudershan";
 		String t = "nahSerdsu";
 		System.out.println(anagram(s,t));

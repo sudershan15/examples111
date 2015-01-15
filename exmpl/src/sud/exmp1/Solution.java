@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Solution {
 	public static void main(String[] args) {
-		String input = "2556";
+		String input = "12702556";
 		for (String s : ip(input, 3)) {
 			System.out.println(s);
 		}

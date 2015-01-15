@@ -8,6 +8,7 @@ public class rotate {
 
 		int final_len = arr.length;
 		int tem_length = final_len;
+		int counter = 0;
 		for(int i = 0; i < tem_length; i++) {
 			if(arr[i] == "G")
 			{
@@ -17,7 +18,7 @@ public class rotate {
 			}
 			if(arr[i] == "R")
 			{
-				int counter = 0;
+				
 				if (i != 0) {
 					swap(counter , i);
 					counter ++;

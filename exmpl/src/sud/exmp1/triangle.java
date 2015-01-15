@@ -14,11 +14,11 @@ public class triangle {
 				System.out.print(" ");
 			}
 			for(int k=0; k < i; k++) {
-				System.out.print(x);
+				System.out.print(c);
 				System.out.print(" ");
 			}
 			for (int l = 0; l < i-1; l++) {
-				System.out.print(x);
+				System.out.print(c);
 				System.out.print(" ");
 			}
 			c--;

@@ -20,42 +20,28 @@ public class Printing_Matrix_in_Spiral_Order {
 		int TopLeftCol=0;
 		int BottomRightRow=test.length-1;
 		int BottomRightCol=test[0].length-1;
-		int num=1;
-		while(num!=7)
 		while(TopLeftRow <= BottomRightRow && TopLeftCol <= BottomRightCol){
 			int beginX=TopLeftRow;
 			int beginY=TopLeftCol;
 			int endX=BottomRightRow;
 			int endY=BottomRightCol;
-			if(beginX == endX){
-				for(int i = beginY; i <= endY; i++){
-					System.out.print(test[beginX][i]+" ");
-				}
+			int curCol = beginY;
+			while(curCol != endY){
+				System.out.print(test[beginX][curCol]+" ");
+				curCol++;
 			}
-			else if(beginY == endY){
-				for(int i = beginX; i <= endX; i++){
-					System.out.print(test[i][beginY]+" ");
-				}
+			int curRow = beginX; 
+			while(curRow != endX){
+				System.out.print(test[curRow][endY]+" ");
+				curRow++;
 			}
-			else{
-				int curCol = beginY;
-				while(curCol != endY){
-					System.out.print(test[beginX][curCol]+" ");
-					curCol++;
-				}
-				int curRow = beginX; 
-				while(curRow != endX){
-					System.out.print(test[curRow][endY]+" ");
-					curRow++;
-				}
-				while(curCol != beginY){
-					System.out.print(test[endX][curCol]+" ");
-					curCol--;
-				}
-				while(curRow != beginX){
-					System.out.print(test[curRow][beginY]+" ");
-					curRow--;
-				}
+			while(curCol != beginY){
+				System.out.print(test[endX][curCol]+" ");
+				curCol--;
+			}
+			while(curRow != beginX){
+				System.out.print(test[curRow][beginY]+" ");
+				curRow--;
 			}
 			TopLeftRow++;
 			TopLeftCol++;
