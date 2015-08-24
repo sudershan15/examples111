@@ -1,7 +1,9 @@
 package sud.exmp1;
 
 public class Coins {
-
+//coins in a line
+    
+    
 	static int MAX_N = 100;
 
 	void printMoves(int P[][], int A[], int N) {
@@ -25,7 +27,7 @@ public class Coins {
 				+ P[0][N - 1] + ".\n");
 	}
 
-	int maxMoney(int A[], int N) {
+	private int maxMoney(int A[], int N) {
 		int P[][] = new int[MAX_N][MAX_N];
 		int a, b, c;
 		for (int i = 0; i < N; i++) {

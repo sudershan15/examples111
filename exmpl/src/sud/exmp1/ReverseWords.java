@@ -23,9 +23,9 @@ public class ReverseWords {
 			System.out.print(str1[i]);
 		System.out.println();
 		while(end < length) {
-			if (str1[end] != ',') {
+			if (str1[end] != ' ') {
 				start = end;
-				while(end < length && str1[end] != ',')
+				while(end < length && str1[end] != ' ')
 					end++;
 				end--;
 				str1 = ReverseString(str1, start, end);
@@ -38,7 +38,7 @@ public class ReverseWords {
 		return;
 	}
 	public static void main(String args[]) {
-		String str = "grass, is, green";
+		String str = "grass is green";
 		char[] str1 = str.toCharArray();
 		int len = str.length(); 
 		ReverseSentence(str1, len);

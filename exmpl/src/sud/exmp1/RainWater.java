@@ -1,5 +1,14 @@
 package sud.exmp1;
 
+/**
+ * which island has more water
+ * |  |        |  |   |    |
+ * |  ||    |  |||||  ||   ||
+ * |||||||| ||||||||||||  |||| 
+ * |||||||||||||||||||||||||||
+ * @author smalpani
+ *
+ */
 public class RainWater {
 	public int Solution(int[] A) {
 

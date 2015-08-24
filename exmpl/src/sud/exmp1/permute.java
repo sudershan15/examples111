@@ -15,9 +15,8 @@ public class permute
 	    boolean[] used = new boolean[str.length()];
 	    StringBuffer out = new StringBuffer();
 	    permute p = new permute();
-	    StringBuffer strBuf = new StringBuffer(str);
 	    p.doPermute(str.toCharArray(), out, used, str.length(), 0);
-	    //doPerm(strBuf,str.length());
+	    //doPerm(out,str.length());
 
 	}
 	

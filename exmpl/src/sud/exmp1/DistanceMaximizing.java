@@ -13,7 +13,7 @@ public class DistanceMaximizing {
 		int [] rMax = new int[n];
 		lMin[0] = distance[0];
 		rMax[n-1] = distance[n-1];
-		for(int i=1; i<=0; i–-) {
+		for(int i=n-1; i>=0; i--) {
 			rMax[i] = Math.max(distance[i], rMax[i+1]);
 		}
 		int i=0, j=0, maxIndexDiff=-1;

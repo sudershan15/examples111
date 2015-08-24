@@ -47,6 +47,8 @@ public class Combinations {
 	public void doCombine(char[] str, StringBuilder out, int len, int level,
 			int start) {
 		assert(start<len);
+		if (start==len)
+		    System.out.println("--------->"+out.toString());
 		for (int i = start; i < len; i++) {
 			out.append(str[i]);
 			System.out.println(out);

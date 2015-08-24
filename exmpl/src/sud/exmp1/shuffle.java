@@ -25,7 +25,7 @@ public class shuffle {
 	 String temp;
 	 int index;
 	 for (int i = 0; i < deck.length; i++) {
-		 index = (int) (Math.random() * (deck.length - 1));
+		 index = (int) (Math.random() * (deck.length - i)) + i;
 		 temp = deck[i];
 		 deck [i] = deck[index];
 		 deck[index] = temp;

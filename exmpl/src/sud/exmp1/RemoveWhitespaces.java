@@ -15,6 +15,6 @@ public class RemoveWhitespaces {
                 symbols[j++] = symbols[i];
             }
         }
-        return new String(symbols, 0, j);
+        return new String(symbols, 0, j).trim();
     }
 }
