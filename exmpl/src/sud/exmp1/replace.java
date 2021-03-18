@@ -3,7 +3,7 @@ package sud.exmp1;
 public class replace {
 	public static void main(String[] args) {
 		String given = "bhab  dgbhd  bbb bd";
-		String find = "bh";
+		String find = " ";
 		String replace_bd = "%20";
 		int no_of_occurences = 0;
 		StringBuffer str = new StringBuffer();

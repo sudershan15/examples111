@@ -16,8 +16,8 @@ public class Anagram {
 		int num_completed_t = 0;
 		char[] s_array = s.toCharArray();
 		for (char c : s_array) { // count number of each char in s.
-			if (letters[c] == 0) ++num_unique_chars;
-			++letters[c];
+			if (letters[c]++ == 0) ++num_unique_chars;
+			//++letters[c];
 		}
 		for (int i = 0; i < t.length(); ++i) {
 			int c = (int) t.charAt(i);
@@ -37,7 +37,7 @@ public class Anagram {
 	}
 	
 	public static void main(String[] args){
-		Map<Character, Integer> l=new HashMap(); 
+		Map<Character, Integer> l=new HashMap<Character, Integer>(); 
 		String s = "Sudershan";
 		String t = "nahSerdsu";
 		System.out.println(anagram(s,t));

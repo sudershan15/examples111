@@ -31,7 +31,6 @@ public class Coins {
 		int P[][] = new int[MAX_N][MAX_N];
 		int a, b, c;
 		for (int i = 0; i < N; i++) {
-			System.out.println("here");
 			for (int m = 0, n = i; n < N; m++, n++) {
 				assert (m < N);
 				assert (n < N);
@@ -39,22 +38,17 @@ public class Coins {
 				a = ((m + 2 <= N - 1) ? P[m + 2][n] : 0);
 				b = ((m + 1 <= N - 1 && n - 1 >= 0) ? P[m + 1][n - 1] : 0);
 				c = ((n - 2 >= 0) ? P[m][n - 2] : 0);
-				System.out.println("m: " + m);
-				System.out.println("n: " + n);
-				System.out.println("a: " + a);
-				System.out.println("b: " + b);
-				System.out.println("c: " + c);
 				P[m][n] = Math
 						.max(A[m] + Math.min(a, b), A[n] + Math.min(b, c));
-				System.out.println("P[m][n]: " + P[m][n]);
 			}
 		}
-		printMoves(P, A, N);
+		//printMoves(P, A, N);
 		return P[0][N - 1];
 	}
 	
 	public static void main(String[] args) {
-		int A[] = {3, 2, 2, 3, 1, 2};
+		int A[] = { 6, 9, 1, 2, 16, 8};//{3, 2, 2, 3, 1, 2};
+		//
 		Coins c = new Coins();
 		System.out.println(c.maxMoney(A, A.length));
 	}
